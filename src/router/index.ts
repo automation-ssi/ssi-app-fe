@@ -1,24 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-const Guest = () => import('@/components/layouts/guest/App.vue')
-const Admin = () => import('@/components/layouts/auth/App.vue')
+import Guest from '@/components/layouts/guest/App.vue'
+import Admin from '@/components/layouts/auth/App.vue'
 
-const Setup = () => import('@/views/Users/Setup.vue')
-const Login = () => import('@/views/Users/Login.vue')
+import Setup from '@/views/Users/SetupView.vue'
+import Login from '@/views/Users/LoginView.vue'
 
-const Home = () => import('@/views/Home/Index.vue')
+import Home from '@/views/Home/IndexView.vue'
 
-const Users = () => import('@/views/Users/Index.vue')
-const CreateUser = () => import('@/views/Users/Create.vue')
-const EditUser = () => import('@/views/Users/Edit.vue')
+import Users from '@/views/Users/IndexView.vue'
+import CreateUser from '@/views/Users/CreateView.vue'
+import EditUser from '@/views/Users/EditView.vue'
 
-const RolesAndPermission = () => import('@/views/RolesAndPermission/Index.vue')
+import RolesAndPermission from '@/views/RolesAndPermission/IndexView.vue'
 
-const Integrations = () => import('@/views/Integrations/Index.vue')
-const CreateIntegration = () => import('@/views/Integrations/Create.vue')
-const EditIntegration = () => import('@/views/Integrations/Edit.vue')
+import Integrations from '@/views/Integrations/IndexView.vue'
+import CreateIntegration from '@/views/Integrations/CreateView.vue'
+import EditIntegration from '@/views/Integrations/EditView.vue'
 
-const Settings = () => import('@/views/Settings/Index.vue')
+import Settings from '@/views/Settings/IndexView.vue'
 
 const routes = [
   {
@@ -32,7 +32,7 @@ const routes = [
       },
       {
         name: 'login',
-        path: 'login',
+        path: '',
         component: Login
       }
     ]
