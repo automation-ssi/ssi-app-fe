@@ -1,6 +1,6 @@
 <script setup>
-import Topbar from '@/components/layouts/auth/TopbarView.vue'
-import Sidebar from '@/components/layouts/auth/SidebarView.vue'
+import Topbar from '@/components/layouts/auth/Topbar.vue'
+import Sidebar from '@/components/layouts/auth/Sidebar.vue'
 </script>
 
 <template>

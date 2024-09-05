@@ -13,7 +13,7 @@ const navigations = ref([
   {
     name: 'Users',
     href: ['/admin/users', '/admin/roles-and-permission'],
-    open: false,
+    open: true,
     icon: 'SupervisedUserCircleFilled',
     children: [
       {

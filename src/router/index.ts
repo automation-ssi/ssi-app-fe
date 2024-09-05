@@ -3,22 +3,22 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Guest from '@/components/layouts/guest/App.vue'
 import Admin from '@/components/layouts/auth/App.vue'
 
-import Setup from '@/views/Users/SetupView.vue'
-import Login from '@/views/Users/LoginView.vue'
+import Setup from '@/views/Users/Setup.vue'
+import Login from '@/views/Users/Login.vue'
 
-import Home from '@/views/Home/IndexView.vue'
+import Home from '@/views/Home/Index.vue'
 
-import Users from '@/views/Users/IndexView.vue'
-import CreateUser from '@/views/Users/CreateView.vue'
-import EditUser from '@/views/Users/EditView.vue'
+import Users from '@/views/Users/Index.vue'
+import CreateUser from '@/views/Users/Create.vue'
+import EditUser from '@/views/Users/Edit.vue'
 
-import RolesAndPermission from '@/views/RolesAndPermission/IndexView.vue'
+import RolesAndPermission from '@/views/RolesAndPermission/Index.vue'
 
-import Integrations from '@/views/Integrations/IndexView.vue'
-import CreateIntegration from '@/views/Integrations/CreateView.vue'
-import EditIntegration from '@/views/Integrations/EditView.vue'
+import Integrations from '@/views/Integrations/Index.vue'
+import CreateIntegration from '@/views/Integrations/Create.vue'
+import EditIntegration from '@/views/Integrations/Edit.vue'
 
-import Settings from '@/views/Settings/IndexView.vue'
+import Settings from '@/views/Settings/Index.vue'
 
 const routes = [
   {
