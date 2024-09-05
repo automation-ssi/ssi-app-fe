@@ -23,7 +23,7 @@ const options = [
     <div class="space-y-3 px-4">
       <div class="grid grid-cols-12 gap-x-3 gap-y-1.5">
         <div class="col-span-12 md:col-span-3">
-          <div class="cursor-pointer border">
+          <div class="bg-white cursor-pointer border rounded-sm">
             <n-dropdown trigger="click" placement="bottom-start" :options="options">
               <div class="flex items-end justify-between gap-1.5 px-3 py-1.5">
                 <span class="font-semibold">Instana Dashboard</span>
@@ -42,14 +42,141 @@ const options = [
 
       <n-tabs type="line" animated>
         <n-tab-pane name="wnm" tab="Websites & Mobile Apps">
-          <n-card size="small">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quo.
-          </n-card>
+          <div class="space-y-3">
+            <n-card size="small" title="Websites">
+              <n-table size="small" :single-line="false">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Page views</th>
+                    <th>OnLoad times</th>
+                    <th>Health</th>
+                    <th width="85">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>...</td>
+                    <td>[graph / count]</td>
+                    <td>[graph / count]</td>
+                    <td>[icon]</td>
+                    <td>
+                      <div class="space-x-1">
+                        <n-button size="small">
+                          <MaterialIcon icon="RemoveRedEyeOutlined" class="w-4 h-4 mr-2" />
+                          <span>View</span>
+                        </n-button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </n-table>
+            </n-card>
+
+            <n-card size="small" title="Mobile Apps">
+              <n-table size="small" :single-line="false">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Sessions</th>
+                    <th>Views</th>
+                    <th>Health</th>
+                    <th width="85">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>...</td>
+                    <td>[count]</td>
+                    <td>[graph / count]</td>
+                    <td>[icon]</td>
+                    <td>
+                      <div class="space-x-1">
+                        <n-button size="small">
+                          <MaterialIcon icon="RemoveRedEyeOutlined" class="w-4 h-4 mr-2" />
+                          <span>View</span>
+                        </n-button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </n-table>
+            </n-card>
+          </div>
         </n-tab-pane>
         <n-tab-pane name="apps" tab="Applications">
-          <n-card size="small">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quo.
-          </n-card>
+          <div class="space-y-3">
+            <n-card size="small" title="Applications">
+              <n-table size="small" :single-line="false">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Services</th>
+                    <th>Calls</th>
+                    <th>Latency</th>
+                    <th>Health</th>
+                    <th width="85">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>...</td>
+                    <td>[count]</td>
+                    <td>[graph / count]</td>
+                    <td>[graph / count]</td>
+                    <td>[icon]</td>
+                    <td>
+                      <div class="space-x-1">
+                        <n-button size="small">
+                          <MaterialIcon icon="RemoveRedEyeOutlined" class="w-4 h-4 mr-2" />
+                          <span>View</span>
+                        </n-button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </n-table>
+            </n-card>
+          </div>
+        </n-tab-pane>
+        <n-tab-pane name="infra" tab="Infrastructure">
+          <div class="space-y-3">
+            <n-card size="small" title="Infrastructure">
+              <n-table size="small" :single-line="false">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Zone</th>
+                    <th>Technologies</th>
+                    <th>OS</th>
+                    <th>Number of CPUs</th>
+                    <th>CPU usage</th>
+                    <th>Health</th>
+                    <th width="85">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>[count]</td>
+                    <td>[graph / count]</td>
+                    <td>[icon]</td>
+                    <td>
+                      <div class="space-x-1">
+                        <n-button size="small">
+                          <MaterialIcon icon="RemoveRedEyeOutlined" class="w-4 h-4 mr-2" />
+                          <span>View</span>
+                        </n-button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </n-table>
+            </n-card>
+          </div>
         </n-tab-pane>
       </n-tabs>
     </div>
