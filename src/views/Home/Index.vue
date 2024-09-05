@@ -1,6 +1,6 @@
 <script setup>
 import MaterialIcon from '@/components/ui/icons/MaterialIcon.vue'
-import Breadcrumb from '@/components/ui/Breadcrumb.vue'
+import Breadcrumb from '@/components/ui/navigations/Breadcrumb.vue'
 
 const breadcrumbItems = [
   { label: 'Home', path: '/admin/home' },
@@ -40,13 +40,18 @@ const options = [
         </div>
       </div>
 
-      <n-card style="margin-bottom: 16px">
-        <n-tabs type="line" animated>
-          <n-tab-pane name="wnm" tab="Websites & Mobile Apps"> Wonderwall </n-tab-pane>
-          <n-tab-pane name="apps" tab="Applications"> Hey Jude </n-tab-pane>
-          <n-tab-pane name="infra" tab="Infrastructure"> Qilixiang </n-tab-pane>
-        </n-tabs>
-      </n-card>
+      <n-tabs type="line" animated>
+        <n-tab-pane name="wnm" tab="Websites & Mobile Apps">
+          <n-card size="small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quo.
+          </n-card>
+        </n-tab-pane>
+        <n-tab-pane name="apps" tab="Applications">
+          <n-card size="small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quo.
+          </n-card>
+        </n-tab-pane>
+      </n-tabs>
     </div>
   </div>
 </template>

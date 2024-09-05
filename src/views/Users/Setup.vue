@@ -4,7 +4,7 @@ import MaterialIcon from '@/components/ui/icons/MaterialIcon.vue'
 
 <template>
   <div class="flex items-center justify-center h-screen">
-    <n-card class="w-[350px] py-10">
+    <n-card size="small" class="w-[350px] py-10">
       <div class="space-y-6">
         <div class="flex items-center justify-center w-16 h-16 bg-secondary border rounded-full">
           <MaterialIcon icon="DashboardRound" class="w-14 h-14 rotate-45" />

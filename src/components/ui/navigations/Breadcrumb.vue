@@ -9,7 +9,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="w-full px-4 py-1.5">
+  <div class="w-full px-4 py-3">
     <div class="text-xs text-gray-500 bg-gray-100 rounded-sm px-2 py-1">
       <span v-for="(item, index) in items" :key="index">
         <RouterLink :to="item.path">{{ item.label }}</RouterLink>

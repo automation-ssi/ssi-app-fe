@@ -1,5 +1,5 @@
 <script setup>
-import Breadcrumb from '@/components/ui/Breadcrumb.vue'
+import Breadcrumb from '@/components/ui/navigations/Breadcrumb.vue'
 
 const breadcrumbItems = [
   { label: 'Home', path: '/admin/home' },

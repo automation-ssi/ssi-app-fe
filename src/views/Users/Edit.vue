@@ -1,6 +1,6 @@
 <script setup>
 import MaterialIcon from '@/components/ui/icons/MaterialIcon.vue'
-import Breadcrumb from '@/components/ui/Breadcrumb.vue'
+import Breadcrumb from '@/components/ui/navigations/Breadcrumb.vue'
 
 const breadcrumbItems = [
   { label: 'Home', path: '/admin/home' },
@@ -25,7 +25,7 @@ const breadcrumbItems = [
     <Breadcrumb :items="breadcrumbItems" />
 
     <div class="space-y-3 px-4">
-      <n-card class="space-y-4">
+      <n-card size="small" class="space-y-4">
         <div class="space-y-3">
           <div class="grid grid-cols-12 gap-x-3 gap-y-1.5">
             <div class="flex items-center col-span-12 md:col-span-3">
