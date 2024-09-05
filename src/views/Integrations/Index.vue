@@ -1,5 +1,11 @@
 <script setup>
 import MaterialIcon from '@/components/ui/icons/MaterialIcon.vue'
+import Breadcrumb from '@/components/ui/Breadcrumb.vue'
+
+const breadcrumbItems = [
+  { label: 'Home', path: '/admin/home' },
+  { label: 'Integrations', path: '/admin/integrations' }
+]
 </script>
 
 <template>
@@ -15,13 +21,7 @@ import MaterialIcon from '@/components/ui/icons/MaterialIcon.vue'
     </div>
   </div>
   <div class="flex-1">
-    <div class="w-full px-4 py-1.5">
-      <div class="text-xs text-gray-500 bg-gray-100 rounded-sm space-x-1.5 px-2 py-1">
-        <RouterLink to="/admin/home">Home</RouterLink>
-        <span>/</span>
-        <RouterLink to="/admin/integrations">Integrations</RouterLink>
-      </div>
-    </div>
+    <Breadcrumb :items="breadcrumbItems" />
 
     <div class="px-4">
       <n-card class="space-y-4">

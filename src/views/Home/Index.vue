@@ -1,17 +1,16 @@
 <script setup>
-import { ref } from 'vue'
 import MaterialIcon from '@/components/ui/icons/MaterialIcon.vue'
+import Breadcrumb from '@/components/ui/Breadcrumb.vue'
 
-const options = ref([
-  {
-    label: 'Instana',
-    disabled: true
-  },
-  {
-    label: 'Turbonomic',
-    disabled: false
-  }
-])
+const breadcrumbItems = [
+  { label: 'Home', path: '/admin/home' },
+  { label: 'Instana', path: '/admin/home/instana' }
+]
+
+const options = [
+  { label: 'Instana', disabled: true },
+  { label: 'Turbonomic', disabled: false }
+]
 </script>
 
 <template>
@@ -19,13 +18,8 @@ const options = ref([
     <h1 class="text-lg font-semibold">Home</h1>
   </div>
   <div class="flex-1">
-    <div class="w-full px-4 py-1.5">
-      <div class="text-xs text-gray-500 bg-gray-100 rounded-sm space-y-1.5 px-2 py-1">
-        <RouterLink to="/admin/home">Home</RouterLink>
-        <span>/</span>
-        <RouterLink to="/admin/home/instana">Instana</RouterLink>
-      </div>
-    </div>
+    <Breadcrumb :items="breadcrumbItems" />
+
     <div class="space-y-3 px-4">
       <div class="grid grid-cols-12 gap-x-3 gap-y-1.5">
         <div class="col-span-12 md:col-span-3">
