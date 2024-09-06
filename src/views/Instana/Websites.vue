@@ -7,11 +7,6 @@ const breadcrumbItems = [
   { label: 'Instana', path: '/admin/home/instana' },
   { label: 'Websites', path: '/admin/home/instana/websites' }
 ]
-
-const options = [
-  { label: 'Instana', disabled: true },
-  { label: 'Turbonomic', disabled: false }
-]
 </script>
 
 <template>
