@@ -2,10 +2,7 @@
 import MaterialIcon from '@/components/ui/icons/MaterialIcon.vue'
 import Breadcrumb from '@/components/ui/navigations/Breadcrumb.vue'
 
-const breadcrumbItems = [
-  { label: 'Home', path: '/admin/home' },
-  { label: 'Instana', path: '/admin/home/instana' }
-]
+const breadcrumbItems = [{ label: 'Home', path: '/admin/home' }]
 
 const options = [
   { label: 'Instana', disabled: true },
@@ -56,16 +53,18 @@ const options = [
                 </thead>
                 <tbody>
                   <tr>
-                    <td>...</td>
+                    <td>[text]</td>
                     <td>[graph / count]</td>
                     <td>[graph / count]</td>
                     <td>[icon]</td>
                     <td>
                       <div class="space-x-1">
-                        <n-button size="small">
-                          <MaterialIcon icon="RemoveRedEyeOutlined" class="w-4 h-4 mr-2" />
-                          <span>View</span>
-                        </n-button>
+                        <RouterLink to="/admin/instana/websites">
+                          <n-button size="small">
+                            <MaterialIcon icon="RemoveRedEyeOutlined" class="w-4 h-4 mr-2" />
+                            <span>View</span>
+                          </n-button>
+                        </RouterLink>
                       </div>
                     </td>
                   </tr>
@@ -86,7 +85,7 @@ const options = [
                 </thead>
                 <tbody>
                   <tr>
-                    <td>...</td>
+                    <td>[text]</td>
                     <td>[count]</td>
                     <td>[graph / count]</td>
                     <td>[icon]</td>
@@ -120,7 +119,7 @@ const options = [
                 </thead>
                 <tbody>
                   <tr>
-                    <td>...</td>
+                    <td>[text]</td>
                     <td>[count]</td>
                     <td>[graph / count]</td>
                     <td>[graph / count]</td>
@@ -157,10 +156,10 @@ const options = [
                 </thead>
                 <tbody>
                   <tr>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
+                    <td>[text]</td>
+                    <td>[text]</td>
+                    <td>[text]</td>
+                    <td>[text]</td>
                     <td>[count]</td>
                     <td>[graph / count]</td>
                     <td>[icon]</td>

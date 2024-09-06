@@ -48,23 +48,29 @@ const breadcrumbItems = [
                 <th>Role</th>
                 <th>Status</th>
                 <th>Date Created</th>
-                <th width="79">Actions</th>
+                <th width="200">Actions</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
+                <td>[text]</td>
+                <td>[text]</td>
+                <td>[text]</td>
+                <td>[text]</td>
+                <td>[text]</td>
                 <td>
-                  <RouterLink to="/admin/users/edit">
+                  <div class="space-x-1">
                     <n-button size="small">
-                      <MaterialIcon icon="EditRound" class="w-4 h-4 mr-2" />
-                      <span>Edit</span>
+                      <MaterialIcon icon="SecurityRound" class="w-4 h-4 mr-2" />
+                      <span>Permissions</span>
                     </n-button>
-                  </RouterLink>
+                    <RouterLink to="/admin/users/edit">
+                      <n-button size="small">
+                        <MaterialIcon icon="EditRound" class="w-4 h-4 mr-2" />
+                        <span>Edit</span>
+                      </n-button>
+                    </RouterLink>
+                  </div>
                 </td>
               </tr>
             </tbody>

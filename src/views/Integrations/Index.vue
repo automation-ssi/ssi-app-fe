@@ -47,9 +47,9 @@ const breadcrumbItems = [
             </thead>
             <tbody>
               <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
+                <td>[text]</td>
+                <td>[text]</td>
+                <td>[text]</td>
                 <td>
                   <div class="space-x-1">
                     <RouterLink to="/admin/home">

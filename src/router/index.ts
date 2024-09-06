@@ -8,6 +8,8 @@ import Login from '@/views/Users/Login.vue'
 
 import Home from '@/views/Home/Index.vue'
 
+import InstanaWebsites from '@/views/Instana/Websites.vue'
+
 import Users from '@/views/Users/Index.vue'
 import CreateUser from '@/views/Users/Create.vue'
 import EditUser from '@/views/Users/Edit.vue'
@@ -90,6 +92,21 @@ const routes = [
             name: 'admin.integrations.edit',
             path: 'edit',
             component: EditIntegration
+          }
+        ]
+      },
+      {
+        name: 'admin.instana',
+        path: 'instana',
+        children: [
+          {
+            name: 'admin.instana',
+            path: ''
+          },
+          {
+            name: 'admin.instana.websites',
+            path: 'websites',
+            component: InstanaWebsites
           }
         ]
       },
