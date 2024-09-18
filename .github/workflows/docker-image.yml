@@ -1,7 +1,11 @@
 name: Docker Image CI
 
 on:
-  [workflow_dispatch]
+  push:
+    branches: 
+      - production
+    paths:
+      - './Dockerfile'
 
 jobs:
   publish_images:
