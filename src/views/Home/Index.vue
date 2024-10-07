@@ -30,10 +30,12 @@ const options = [
           </div>
         </div>
         <div class="col-span-12 md:col-span-2 md:col-start-11">
-          <n-button class="w-full">
-            <span class="text-xs">Go to Instana</span>
-            <MaterialIcon icon="ArrowForwardRound" class="w-4 h-4 ml-2" />
-          </n-button>
+          <a href="https://172.1.87.254/#/home" target="_blank">
+            <n-button class="w-full">
+              <span class="text-xs">Go to Instana</span>
+              <MaterialIcon icon="ArrowForwardRound" class="w-4 h-4 ml-2" />
+            </n-button>
+          </a>
         </div>
       </div>
 
